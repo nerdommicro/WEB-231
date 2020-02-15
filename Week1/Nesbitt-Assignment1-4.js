@@ -14,7 +14,7 @@ var age = "21";
 var street = "100 Main St";
 var city = "Levittown";
 var zipCode = "11756";
-console.log("Name: " + firstName + " " + lastName);
+console.log("First and Last Name: " + firstName + " " + lastName);
 console.log("Age: " + age);
 console.log("Street: " + street);
 console.log("City, Zip Code: " + city + ", " + zipCode);
