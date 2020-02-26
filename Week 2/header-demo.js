@@ -14,6 +14,6 @@
 * Description: Returns my formatted header
 */
 
-const header = require('./Nesbitt-header');
+const header = require('../Nesbitt-header.js');
 
-console.log(header.display("Michelle", "Nesbitt", "Week 2"));
+console.log(header.display("Michelle", "Nesbitt", "Exercise 2.2"));
