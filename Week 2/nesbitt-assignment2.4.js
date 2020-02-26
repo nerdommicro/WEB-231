@@ -15,12 +15,18 @@ console.log(header.display("Michelle", "Nesbitt", "Exercise 2.4"));
 /*
   Expected output:
 
-  FirstName LastName
+  Michelle Nesbitt
   Exercise 2.4
-  Today's Date
+  Date: 2/26/2020
 
-  Hello FirstName LastName!
-*/
+  Additional output:
+
+  Name: Michelle Nesbitt
+  Date: Wed Mar 04 2020 00:00:00 GMT-0500 (Eastern Standard Time)
+  Format of number: 5.00
+  Int converted: 15
+  Float converted: 65.55
+  */
 
 //Begin program
 
