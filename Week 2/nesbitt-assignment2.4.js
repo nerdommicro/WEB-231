@@ -51,15 +51,15 @@ function formatNumber(number,numOfFixedPositions) {
 //function that takes one string parameter
 //returns int converted from a string
 function convertToInt(strValue) {
-  var intResult = parseInt(strValue);
-  return intResult;
+  return parseInt(strValue);
+
 }
 
 //function that takes one string parameter
 //returns float converted from a string
 function convertToFloat(strValue) {
-  var fltResult = parseFloat(strValue);
-  return fltResult;
+  return parseFloat(strValue);
+
 }
 
 
