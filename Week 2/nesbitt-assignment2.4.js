@@ -19,14 +19,13 @@ console.log(header.display("Michelle", "Nesbitt", "Exercise 2.4"));
   Exercise 2.4
   Date: 2/26/2020
 
-  Additional output:
+  Hello my name is <your actual name goes here>!
 
-  Name: Michelle Nesbitt
-  Date: Wed Mar 04 2020 00:00:00 GMT-0500 (Eastern Standard Time)
-  Format of number: 5.00
-  Int converted: 15
-  Float converted: 65.55
-  */
+  Today's date is <today's date> and the current temperature is <33.6 - use the formatNumber function> degrees.
+
+  I am <your actual age - parsed int value> years old and my savings account goal is <your actual goal - parsed float value> dollars.
+
+*/
 
 //Begin program
 
@@ -66,19 +65,17 @@ function convertToFloat(strValue) {
 
 
 var testFullName = fullName("Michelle", "Nesbitt");
-var testDate = dateWriter(2020, 2, 4);
-var testFormatNumber = formatNumber(5, 2);
-var testConvertInt = convertToInt("15");
-var testConvertFloat = convertToFloat("65.55");
+var testDate = dateWriter(2020, 2, 24);
+var testFormatNumber = formatNumber(33.6, 2);
+var testConvertInt = convertToInt("43");
+var testConvertFloat = convertToFloat("6555.55");
 
 //Print the values to the screen
 
 //prints the output to the screen
-console.log("\n" + "Name: " + testFullName);
-console.log("Date: " + testDate);
-console.log("Format of number: " + testFormatNumber);
-console.log("Int converted: " + testConvertInt);
-console.log("Float converted: " + testConvertFloat);
+console.log("Hello my name is " + testFullName + "!");
+console.log("Today's date is " + testDate + " and the current temperature is " + testFormatNumber + " degrees.");
+console.log("I am " + testConvertInt + " years old and my savings account goal is " + testConvertFloat + " dollars.");
 
 
 
