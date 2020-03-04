@@ -10,7 +10,7 @@
 //Add my header to the includes
 const header = require('../Nesbitt-header.js');
 //Display my header with exercise number
-console.log(header.display("Michelle", "Nesbitt", "Exercise 3.2"));
+console.log(header.display("Michelle", "Nesbitt", "Exercise 3.3"));
 /*
   Expected output:
 
