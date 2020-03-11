@@ -4,7 +4,7 @@
 ; Author: Michelle Nesbitt
 ; Date:   11 March 2020
 ; Modified By: Michelle Nesbitt
-; Description: Demonstrations xx
+; Description: Demonstrations arrays
 ;=====================================================
 */
 
