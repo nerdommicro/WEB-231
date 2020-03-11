@@ -29,11 +29,11 @@ console.log("\n")
 var myArray = ["Apple", "Orange", "Banana", "Mango", "Pear"];
 
 //function to print the array to the screen
-function printFruit(arrayVar) {
+function getFruit(arrayVar) {
   for (var i = 0; i < arrayVar.length; i++){
     console.log(arrayVar[i]);
   }
 }
 //call the function and pass array
-printFruit(myArray);
+getFruit(myArray);
 
