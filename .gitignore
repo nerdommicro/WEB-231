@@ -15,3 +15,4 @@ node_modules/
 .dist
 Bellevue2.code-workspace
 week 5/discussion-5.1.js
+.DS_Store
