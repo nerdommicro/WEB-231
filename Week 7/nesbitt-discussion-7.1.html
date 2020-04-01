@@ -1,0 +1,25 @@
+/*
+======================================================
+; Title:  nesbitt-discussion7.1.html
+; Author: Michelle Nesbitt
+; Date:   27 March 2020
+; Modified By: Michelle Nesbitt
+; Description: Demonstrates errors
+;=====================================================
+*/
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Click button below to show the image.</p>
+<button onclick=showImage>Show Image</button>
+<script>
+showImage() {
+  var myImage = document.createElement("IMG");
+  myImage.setAttribute("src", "https://i.ebayimg.com/images/g/Z0AAAOSwNixdx0n9/s-l640.jpg");
+  document.body.appendChild(myImage);
+}
+</script>
+
+</body>
+</html>
