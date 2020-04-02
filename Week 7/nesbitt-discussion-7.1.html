@@ -12,9 +12,9 @@
 <html>
 <body>
 <p>Click button below to show the image.</p>
-<button onclick=showImage>Show Image</button>
+<button onclick="showImage()"">Show Image</button>
 <script>
-showImage() {
+function showImage() {
   var myImage = document.createElement("IMG");
   myImage.setAttribute("src", "https://i.ebayimg.com/images/g/Z0AAAOSwNixdx0n9/s-l640.jpg");
   document.body.appendChild(myImage);
