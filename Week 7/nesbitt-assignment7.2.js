@@ -36,7 +36,7 @@ function Employee(id, firstName,lastName, title) {
   this.title = title;
 }
 
-var employee = [
+var employees = [
   new Employee('101', 'Thomas', 'Edison', 'Software Engineer'),
   new Employee('102', 'Benjamin', 'Franklin', 'Programmer'),
   new Employee('103', 'Nikola', 'Tesla', 'Project Manager'),
@@ -44,3 +44,9 @@ var employee = [
   new Employee('105', 'Alexander', 'Bell', 'Business Analyst')
 ];
 
+var j = 1;
+var i;
+for (i = 0; i < employees.length; i++) {
+  console.log(j + ' ' + employees[i].firstName + ' ' + employees[i].lastName + ' ' + employees[i].title);
+  j++;
+}
