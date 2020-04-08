@@ -8,20 +8,30 @@
 */
 
 table {
-  border-collapse: collapse;
+    border-collapse: collapse;
 }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 5px;
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
 }
 
 th {
-  background-color: steelblue;
-  color: white;
+    background-color: steelblue;
+    color: white;
 }
 
 tr:nth-child(even) {
-  background-color: lightsteelblue;
+    background-color: lightsteelblue;
+}
+
+.topbar {
+    background-color: yellow;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 0 auto;
 }
