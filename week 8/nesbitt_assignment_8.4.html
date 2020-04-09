@@ -1,0 +1,58 @@
+<!--
+============================================
+; Title:  nesbitt-assignment 8.4.html
+; Author: Professor Krasso
+; Date:   April 1, 2020
+; Modified: Michelle Nesbitt
+; Description: Demonstrates jQuery
+;===========================================
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 8.4</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../site.css">
+</head>
+
+<body>
+
+    <div id="emps "></div>
+
+    <script>
+        function employees(id, firstName, lastName, title) {
+            this.id = id;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.title = title;
+        }
+        var employees = [
+            new employees('101', 'Thomas', 'Edison', 'Programmer'),
+            new employees('104', 'James', 'Tesla', 'Driver'),
+            new employees('107', 'Abraham', 'Lincoln', 'Software Engineer'),
+            new employees('109', 'Bill', 'Gates', 'Computer Technician'),
+            new employees('112', 'Hillary', 'Clinton', 'President')
+        ];
+
+        function getEmployee(id) {
+            for (var x = 0; x < employees.length; x++) {
+                alert(employees[x].id + " " + employees[x].firstName + " " + employees[x].lastName + " " + employees[x].title)
+            }
+        };
+        var out = "<h1>Employee Listing</h1><table>";
+        for (var x = 0; x < employees.length; x++) {
+            out += "<td><a href=\"#\" class=\"empId\">" + employees[x].id + "</a></td><td>" + employees[x].firstName + " </td><td>" + employees[x].lastName + " </td><td>" + employees[x].title + " </td></tr > ";
+        }
+        out += "</table>";
+
+        document.getElementById('emps').innerHTML = out;
+    </script>
+</body>
+
+</html>
