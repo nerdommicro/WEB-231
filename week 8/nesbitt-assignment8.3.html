@@ -1,0 +1,89 @@
+<!--
+======================================================
+; Title:  nesbitt-assignment8.3.html
+; Author: Michelle Nesbitt
+; Date:   April 1 2020
+; Modified By: Michelle Nesbitt
+; Description: Demonstrates jQuery
+;=====================================================
+*/
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Exercise 8.3</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../site.css">
+
+</head>
+
+<body>
+    <h1>Lorem Ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis elementum mi, eu hendrerit libero. Vivamus hendrerit lacinia enim, et euismod nulla suscipit ac. Mauris mi sapien, euismod quis eros et, dignissim aliquam massa. Aliquam ut elit a
+        sem lobortis placerat eu sed risus. Morbi euismod commodo justo nec dapibus. Integer ac volutpat sem, ut accumsan nibh. Nulla facilisi. Donec ac imperdiet dolor. Sed et augue nec ante condimentum imperdiet aliquet non sem. Fusce id nibh erat.
+        Nullam pharetra porta nisi sed sodales. Suspendisse eu purus ullamcorper, tristique tortor luctus, pharetra ligula. Pellentesque porta dignissim sem id euismod. Aenean ac metus rutrum, maximus eros vitae, fermentum sem. Praesent placerat lobortis
+        turpis ac dictum. Vivamus mollis orci ante, quis commodo lorem dapibus aliquam.</p>
+    <button>Toggle</button>
+    <script type="text/javascript">
+        $("button").click(function() {
+            $("p").toggle();
+        });
+        $(function() {
+
+            $("p").click(function() {
+                $(this).css("background-color", "red");
+                $(this).css("color", "white");
+            });
+
+        });
+    </script>
+
+
+    <div class="topbar"></div>
+    <div id="fruits"></div>
+
+    <script>
+        var fruits = [{
+            id: "Banana",
+            type: "Yellow Fruits"
+        }, {
+            id: "Apple",
+            type: "Red Fruits"
+        }, {
+            id: "Strawberries",
+            type: "Red Fruits"
+        }, {
+            id: "Lime",
+            type: "Green Fruits"
+        }, {
+            id: "Lemon",
+            type: "Yellow Fruits"
+        }]
+        var out = "<h1>Fruits</h1><table>";
+        for (var x = 0; x < fruits.length; x++) {
+            out += "<td><a href=\"#\" class=\"fruitId\">" + fruits[x].id + "</a></td><td>" + fruits[x].type + " </td></tr > ";
+        }
+        out += "</table>";
+
+        document.getElementById('fruits').innerHTML = out;
+    </script>
+
+
+    <script>
+        $(function() {
+            $(".fruitId").click(function(event) {
+                event.preventDefault();
+                var fruitId = $(this).text();
+                var fruitType = $(this).closest("td").next().text();
+                alert("{fruit_id: " + fruitId + ", fruit_type: " + fruitType + "}");
+            });
+        });
+    </script>
+</body>
+
+</html>
